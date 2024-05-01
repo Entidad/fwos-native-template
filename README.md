@@ -64,21 +64,7 @@ allprojects {
 
 ```
 
-Add the Sovrin maven repository to `android/build.gradle`
-
-```
-allprojects {
-    repositories {
-        ...
-        maven {
-            url 'https://repo.sovrin.org/repository/maven-public'
-        }
-        ...
-    }
-}
-```
-
-Edit `android/app/build.gradle` and add JNA as follows
+Ensure `android/app/build.gradle` has jna set to 5.2.0
 
 ```
 dependencies {
@@ -89,7 +75,7 @@ dependencies {
 }
 ```
 
-For `@aries-framework/cheqd` to work, the Hermes engine needs to be used instead of JSCore. To do so, ammend `android/app/build.gradle` as follows
+The Hermes engine needs to be used instead of JSCore. To do so, ammend `android/app/build.gradle` as follows
 
 ```
 project.ext.react = [
@@ -162,7 +148,7 @@ Ensure the following sources are listed in `ios/Podfile`
 source 'https://cdn.cocoapods.org'
 ```
 
-For `@aries-framework/cheqd` to work, the Hermes engine needs to be used instead of JSCore. To do so, ammend `ios/Podfile` as follows:
+The Hermes engine needs to be used instead of JSCore. To do so, ammend `ios/Podfile` as follows:
 
 ```
   use_react_native!(
