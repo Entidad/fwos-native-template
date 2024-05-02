@@ -1,9 +1,9 @@
 PODS:
-  - anoncreds (0.1.0):
+  - anoncreds (0.2.2):
     - React
     - React-callinvoker
     - React-Core
-  - aries-askar (0.1.1):
+  - aries-askar (0.2.1):
     - React
     - React-callinvoker
     - React-Core
@@ -189,7 +189,7 @@ PODS:
   - GoogleUtilities/UserDefaults (7.11.5):
     - GoogleUtilities/Logger
   - hermes-engine (0.70.7)
-  - indy-vdr (0.1.0):
+  - indy-vdr (0.2.2):
     - React
     - React-callinvoker
     - React-Core
@@ -444,13 +444,13 @@ PODS:
   - React-jsinspector (0.70.7)
   - React-logger (0.70.7):
     - glog
-  - react-native-camera (3.40.0):
+  - react-native-camera (4.2.1):
     - React-Core
-    - react-native-camera/RCT (= 3.40.0)
-    - react-native-camera/RN (= 3.40.0)
-  - react-native-camera/RCT (3.40.0):
+    - react-native-camera/RCT (= 4.2.1)
+    - react-native-camera/RN (= 4.2.1)
+  - react-native-camera/RCT (4.2.1):
     - React-Core
-  - react-native-camera/RN (3.40.0):
+  - react-native-camera/RN (4.2.1):
     - React-Core
   - react-native-cameraroll (4.0.1):
     - React
@@ -458,12 +458,10 @@ PODS:
     - React-Core
   - react-native-image-picker (5.0.1):
     - React-Core
-  - react-native-randombytes (3.6.1):
-    - React-Core
   - react-native-safe-area-context (3.1.8):
     - React-Core
-  - react-native-sensitive-info (6.0.0-alpha.9):
-    - React-Core
+  - react-native-sensitive-info (5.5.8):
+    - React
   - react-native-splash-screen (3.2.0):
     - React
   - react-native-sqlite-storage (5.1.3):
@@ -547,13 +545,13 @@ PODS:
     - React-Core
   - RNCMaskedView (0.1.10):
     - React
-  - RNCPicker (2.4.8):
+  - RNCPicker (2.7.5):
     - React-Core
   - RNCPushNotificationIOS (1.10.1):
     - React-Core
   - RNDateTimePicker (3.0.3):
     - React-Core
-  - RNDeviceInfo (8.0.1):
+  - RNDeviceInfo (8.7.1):
     - React-Core
   - RNFastImage (8.3.2):
     - React
@@ -658,7 +656,6 @@ DEPENDENCIES:
   - "react-native-cameraroll (from `../node_modules/@react-native-community/cameraroll`)"
   - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
-  - react-native-randombytes (from `../node_modules/react-native-randombytes`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
   - react-native-sensitive-info (from `../node_modules/react-native-sensitive-info`)
   - react-native-splash-screen (from `../node_modules/react-native-splash-screen`)
@@ -794,8 +791,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-get-random-values"
   react-native-image-picker:
     :path: "../node_modules/react-native-image-picker"
-  react-native-randombytes:
-    :path: "../node_modules/react-native-randombytes"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
   react-native-sensitive-info:
@@ -868,8 +863,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
-  anoncreds: 8e6ab626d5250ae6301c3e96d6fc739186e083f0
-  aries-askar: 738c677e194913ed3c256adc953db3fe0494f8f8
+  anoncreds: c709906b5a3caaf6bbe871646e6c16b522c6531d
+  aries-askar: cb89b1fdc61cd8adf0408a0dd28f7eb6dbf0dec9
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CatCrypto: a477899b6be4954e75be4897e732da098cc0a5a8
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
@@ -898,7 +893,7 @@ SPEC CHECKSUMS:
   GoogleDataTransport: 54dee9d48d14580407f8f5fbf2f496e92437a2f2
   GoogleUtilities: 13e2c67ede716b8741c7989e26893d151b2b2084
   hermes-engine: 566e656aa95456a3f3f739fd76ea9a9656f2633f
-  indy-vdr: 85cd66089f151256581323440e78988891f4082e
+  indy-vdr: 790ab1fd9b12ad5adfce4905c327f5902253eeeb
   IQKeyboardManager: a932e53c5175755c60a3e2ad31a9f3aa5e33dd89
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
   libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
@@ -922,13 +917,12 @@ SPEC CHECKSUMS:
   React-jsiexecutor: e95cdd036e7947ddf87f3049319ac3064deb76b5
   React-jsinspector: 1c34fea1868136ecde647bc11fae9266d4143693
   React-logger: e9f407f9fdf3f3ce7749ae6f88affe63e8446019
-  react-native-camera: 35854c4f764a4a6cf61c1c3525888b92f0fe4b31
+  react-native-camera: 3eae183c1d111103963f3dd913b65d01aef8110f
   react-native-cameraroll: 60ba0068826eab1c8d43146191bafd4363ea58a7
   react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06
   react-native-image-picker: 8cb4280e2c1efc3daeb2d9d597f9429a60472e40
-  react-native-randombytes: 421f1c7d48c0af8dbcd471b0324393ebf8fe7846
   react-native-safe-area-context: 79fea126c6830c85f65947c223a5e3058a666937
-  react-native-sensitive-info: d44e909d065f9c0e15734245e5dd6a24b82e3dcd
+  react-native-sensitive-info: 400c6e3d27945e15c8cddb5b4b92233c85ee06f8
   react-native-splash-screen: 200d11d188e2e78cea3ad319964f6142b6384865
   react-native-sqlite-storage: c1f73763d877b444d05dd0114843b33b2f998523
   react-native-video: c26780b224543c62d5e1b2a7244a5cd1b50e8253
@@ -947,10 +941,10 @@ SPEC CHECKSUMS:
   RNArgon2: 1481820722fd4af1575c09f7fc9ad67c00ee8a42
   RNCAsyncStorage: b03032fdbdb725bea0bd9e5ec5a7272865ae7398
   RNCMaskedView: 5a8ec07677aa885546a0d98da336457e2bea557f
-  RNCPicker: 0bf8ef8f7800524f32d2bb2a8bcadd53eda0ecd1
+  RNCPicker: 3e2c37a8328f368ce14da050cdc8231deb5fc9f9
   RNCPushNotificationIOS: 87b8d16d3ede4532745e05b03c42cff33a36cc45
   RNDateTimePicker: 6f62fd42ac8b58bcc30c43ac3620e5097e8a227f
-  RNDeviceInfo: 921a809eaf9de79645a24de1c6ca90db6cb91786
+  RNDeviceInfo: aad3c663b25752a52bf8fce93f2354001dd185aa
   RNFastImage: e19ba191922e7dab9d932a4d59d62d76660aa222
   RNFBApp: 13ca8ba0feba98d4bac2057884894dcf8eedf97f
   RNFBMessaging: 0bdc8269fefad36f6820d6fc89b0bcae3f705891
@@ -971,4 +965,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 3490d1e2ae12abe3a27c3ef38cca30160b888674
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.11.3
