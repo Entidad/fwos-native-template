@@ -4,15 +4,15 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "io.entidad.app.fwos.developerapp",
+  "applicationId": "app.ufwfoundation.fwos.developerapp",
   "variantName": "devDebug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 2,
-      "versionName": "0.0.2-developerApp",
+      "versionCode": 6,
+      "versionName": "0.0.6-developerApp",
       "outputFile": "app-dev-debug.apk"
     }
   ],

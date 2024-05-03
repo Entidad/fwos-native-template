@@ -75,35 +75,6 @@ dependencies {
 }
 ```
 
-The Hermes engine needs to be used instead of JSCore. To do so, ammend `android/app/build.gradle` as follows
-
-```
-project.ext.react = [
-	bundleForVariant: { def variant -> false },
-	enableHermes : true
-]
-```
-
-```
-def enableHermes = project.ext.react.get("enableHermes", true);
-```
-
-```
-if (enableHermes) {
-	implementation("com.facebook.react:hermes-engine:+") {
-		exclude group:'com.facebook.fbjni'
-	}
-} else {
-	implementation jscFlavor
-}
-```
-
-Be sure to comment out the `jsc` implementation line
-
-```
-//implementation "org.webkit:android-jsc:r245459
-```
-
 For smaller APK sizes, limit the buildTypes by editing `android/app/build.gradle` and add abiFilters as follows [reference](https://developer.android.com/ndk/guides/abis)
 
 ```
@@ -146,16 +117,6 @@ Ensure the following sources are listed in `ios/Podfile`
 
 ```
 source 'https://cdn.cocoapods.org'
-```
-
-The Hermes engine needs to be used instead of JSCore. To do so, ammend `ios/Podfile` as follows:
-
-```
-  use_react_native!(
-    :path => config[:reactNativePath],
-    # Hermes is disabled by default to avoid incompatibilities and slowness with Mendix Runtime.
-    :hermes_enabled => true,
-    :fabric_enabled => false,
 ```
 
 Install the pods as follows
