@@ -22,11 +22,11 @@
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
-    <string>0.0.3</string>
+    <string>0.0.6</string>
     <key>CFBundleSignature</key>
     <string>????</string>
     <key>CFBundleVersion</key>
-    <string>3</string>
+    <string>6</string>
     <key>CodePushKey</key>
     <string/>
     <key>GoogleMapsApiKey</key>
@@ -55,7 +55,7 @@
     <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
     <string>To use that feature, the app needs access to your location.</string>
     <key>NSPhotoLibraryUsageDescription</key>
-    <string>To use that feature, the app needs access to your Photo library.</string>
+    <string>To use that feature, the app needs access to your photo library.</string>
     <key>Runtime url</key>
     <string>$(RUNTIME_URL)</string>
     <key>TargetName</key>

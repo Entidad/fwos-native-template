@@ -5,4 +5,4 @@ BUNDLE_IDENTIFIER = app.ufwfoundation.fwos
 
 RUNTIME_URL = http:\/\/localhost:8080
 
-PRODUCT_NAME = FWOSDemoApp
+PRODUCT_NAME = FWOSDemo

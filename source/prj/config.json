@@ -3,8 +3,8 @@
     "appIdentifier": "app.ufwfoundation.fwos",
     "appName": "FWOS Demo",
     "bundleName": {
-        "main": "FWOSDemoApp",
-        "dev": "FWOSDemoAppDev"
+        "main": "FWOSDemo",
+        "dev": "FWOSDemoDev"
     },
     "deviceTarget": {
         "phone": true,
@@ -78,6 +78,13 @@
             "purpose": "To use that feature, the app needs access to your location.",
             "platform": "ios",
             "required": true
+        },
+        {
+            "title": "Photo Library Usage",
+            "name": "NSPhotoLibraryUsageDescription",
+            "purpose": "To use that feature, the app needs access to your photo library.",
+            "platform": "ios",
+            "required": false
         }
     ],
     "capabilities": {
@@ -122,7 +129,7 @@
             "enabled": false
         }
     },
-    "appVersion": "0.0.3",
-    "buildNumber": 3,
+    "appVersion": "0.0.6",
+    "buildNumber": 6,
     "runtimeUrl": "http://localhost:8080"
 }
