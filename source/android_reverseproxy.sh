@@ -10,7 +10,7 @@ then
 		./android_reverseproxy.sh "$DEVICE"
 	done
 else
-	$SAY setting android reverse proxy
+	$SAY setting android reverse proxy for $DEVICE
 	$ADB -s "$DEVICE" reverse tcp:8080 tcp:8080
 	$ADB -s "$DEVICE" reverse tcp:8083 tcp:8083
 fi
