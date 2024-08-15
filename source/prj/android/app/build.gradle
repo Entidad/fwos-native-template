@@ -59,12 +59,12 @@ android {
     }
     namespace "com.mendix.nativetemplate"
     defaultConfig {
-        applicationId "app.ufwfoundation.fwos"
+        applicationId "io.entidad.app.fwos"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         missingDimensionStrategy "react-native-camera", "general"
-        versionCode 7
-        versionName '0.0.7'
+        versionCode 9
+        versionName "0.1.0"
         testBuildType System.getProperty("testBuildType", "debug")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         resValue "string", "CODE_PUSH_APK_BUILD_TIME", String.format("\"%d\"", System.currentTimeMillis())
@@ -92,15 +92,6 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
-
-            ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a"
-            }
-        }
-        debug {
-            ndk {
-                abiFilters "armeabi-v7a", "arm64-v8a"
-            }
         }
     }
     // applicationVariants are e.g. debug, release
@@ -130,10 +121,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     implementation "com.facebook.react:react-native:+"  // From node_modules
-
-    //Required by Credo (Formerly Aries Framework JavaScript)
-    implementation 'net.java.dev.jna:jna:5.2.0'
-
 
     // Flipper debugger
     debugImplementation("com.facebook.flipper:flipper:${FLIPPER_VERSION}") {

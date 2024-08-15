@@ -1,18 +1,18 @@
 {
     "configVersion": 2,
-    "appIdentifier": "app.ufwfoundation.fwos",
-    "appName": "FWOS Demo",
+    "appIdentifier": "io.entidad.app.fwos",
+    "appName": "FWOS",
     "bundleName": {
-        "main": "FWOSDemo",
-        "dev": "FWOSDemoDev"
+        "main": "FWOS",
+        "dev": "FWOSDev"
     },
     "deviceTarget": {
         "phone": true,
-        "tablet": false
+        "tablet": true
     },
     "orientation": {
         "portrait": true,
-        "landscape": true
+        "landscape": false
     },
     "permissions": [
         {
@@ -85,6 +85,38 @@
             "purpose": "To use that feature, the app needs access to your photo library.",
             "platform": "ios",
             "required": false
+        },
+        {
+            "title": "Bluetooth - Connect",
+            "name": "android.permission.BLUETOOTH_CONNECT",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Bluetooth - Scan",
+            "name": "android.permission.BLUETOOTH_SCAN",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Bluetooth - Advertise",
+            "name": "android.permission.BLUETOOTH_ADVERTISE",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Bluetooth - Always Usage",
+            "name": "NSBluetoothAlwaysUsageDescription",
+            "purpose": "This app may need access to your Bluetooth connection.",
+            "platform": "ios",
+            "required": false
+        },
+        {
+            "title": "Bluetooth - Peripheral Usage",
+            "name": "NSBluetoothPeripheralUsageDescription",
+            "purpose": "This app may need access to your Bluetooth connection.",
+            "platform": "ios",
+            "required": false
         }
     ],
     "capabilities": {
@@ -129,7 +161,8 @@
             "enabled": false
         }
     },
-    "appVersion": "0.0.6",
-    "buildNumber": 6,
-    "runtimeUrl": "http://localhost:8080"
+    "appVersion": "0.1.0",
+    "buildNumber": 9,
+    "runtimeUrl": "http://localhost:8080",
+    "hermesEnabled": false
 }

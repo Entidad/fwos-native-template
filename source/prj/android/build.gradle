@@ -2,10 +2,10 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "31.0.0"
+        buildToolsVersion = "34.0.0"
         minSdkVersion = 21
-        compileSdkVersion = 33
-        targetSdkVersion = 33
+        compileSdkVersion = 34
+        targetSdkVersion = 34
         kotlin_version = "1.7.21"
         excludeAppGlideModule = true
         androidx_lifecycle_version = "2.3.1"
@@ -13,8 +13,6 @@ buildscript {
         firebaseMessagingVersion = "21.0.0"
         androidXCore = "1.6.0"
         androidXBrowser = "1.2.0"
-        //Entidad
-        ndkVersion = "25.1.8937393"
     }
     repositories {
         google()
@@ -39,14 +37,12 @@ buildscript {
 allprojects {
     repositories {
         all { repo ->
-            if (repo.hasProperty('url')) {
-                println repo.url.toString()
-                if (repo.url.toString().contains("jcenter.bintray.com") || repo.url.toString().contains("jitpack.io")) {
-                    project.logger.warn "Repository ${repo.url} removed."
-                    remove repo
-                    google()
-                    mavenCentral()
-                }
+            println repo.url.toString()
+            if (repo.url.toString().contains("jcenter.bintray.com") || repo.url.toString().contains("jitpack.io")) {
+                project.logger.warn "Repository ${repo.url} removed."
+                remove repo
+                google()
+                mavenCentral()
             }
         }
     	exclusiveContent {
