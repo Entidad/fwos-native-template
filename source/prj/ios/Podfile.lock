@@ -3,7 +3,7 @@ PODS:
     - React
     - React-callinvoker
     - React-Core
-  - aries-askar (0.2.1):
+  - aries-askar (0.2.3):
     - React
     - React-callinvoker
     - React-Core
@@ -426,6 +426,8 @@ PODS:
   - React-jsinspector (0.70.7)
   - React-logger (0.70.7):
     - glog
+  - react-native-ble-didcomm (0.8.0):
+    - React-Core
   - react-native-camera (3.40.0):
     - React-Core
     - react-native-camera/RCT (= 3.40.0)
@@ -631,6 +633,7 @@ DEPENDENCIES:
   - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
   - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
   - React-logger (from `../node_modules/react-native/ReactCommon/logger`)
+  - "react-native-ble-didcomm (from `../node_modules/@animo-id/react-native-ble-didcomm`)"
   - react-native-camera (from `../node_modules/react-native-camera`)
   - "react-native-cameraroll (from `../node_modules/@react-native-community/cameraroll`)"
   - react-native-get-random-values (from `../node_modules/react-native-get-random-values`)
@@ -758,6 +761,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/jsinspector"
   React-logger:
     :path: "../node_modules/react-native/ReactCommon/logger"
+  react-native-ble-didcomm:
+    :path: "../node_modules/@animo-id/react-native-ble-didcomm"
   react-native-camera:
     :path: "../node_modules/react-native-camera"
   react-native-cameraroll:
@@ -839,7 +844,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   anoncreds: c709906b5a3caaf6bbe871646e6c16b522c6531d
-  aries-askar: cb89b1fdc61cd8adf0408a0dd28f7eb6dbf0dec9
+  aries-askar: 3a78d5cfc8faedbfc55a9ff35e2309fc4574a147
   boost: a7c83b31436843459a1961bfd74b96033dc77234
   CatCrypto: a477899b6be4954e75be4897e732da098cc0a5a8
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
@@ -890,6 +895,7 @@ SPEC CHECKSUMS:
   React-jsiexecutor: e95cdd036e7947ddf87f3049319ac3064deb76b5
   React-jsinspector: 1c34fea1868136ecde647bc11fae9266d4143693
   React-logger: e9f407f9fdf3f3ce7749ae6f88affe63e8446019
+  react-native-ble-didcomm: da2e9e01809f95bae2c91c001712bb6426ad0260
   react-native-camera: 35854c4f764a4a6cf61c1c3525888b92f0fe4b31
   react-native-cameraroll: 60ba0068826eab1c8d43146191bafd4363ea58a7
   react-native-get-random-values: 21325b2244dfa6b58878f51f9aa42821e7ba3d06

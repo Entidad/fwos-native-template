@@ -95,6 +95,11 @@ For smaller APK sizes, limit the buildTypes by editing `android/app/build.gradle
 ...
 ```
 
+For the Android *.developerApp with Native Template 7.0.15, you will need to apply changes #1 and #2 to MainApplication.java due to an issue with API 34
+```
+https://medium.com/@anaz_19473/react-native-app-crashes-on-upgrading-to-targetsdkversion-34-android-14-f8f575da6b45
+```
+
 Install the node modules by running the following
 
 ```
