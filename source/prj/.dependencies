@@ -1,5 +1,9 @@
 {
     "react-native-camera": "3.40.0",
+    "json-query": "^2.2.2",
+    "react-native-sensitive-info": "^6.0.0-alpha.9",
+    "react-native-argon2": "^2.0.1",
+    "react-native-crypto": "^2.2.0",
     "@animo-id/react-native-ble-didcomm": "0.8.0",
     "@credo-ts/anoncreds": "0.5.9",
     "@credo-ts/askar": "0.5.9",
