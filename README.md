@@ -139,6 +139,18 @@ For the Android *.developerApp with Native Template 7.0.15, you will need to app
 https://medium.com/@anaz_19473/react-native-app-crashes-on-upgrading-to-targetsdkversion-34-android-14-f8f575da6b45
 ```
 
+Enable http (unencrypted) traffic for developerApp distribution. This step is required if you are deploying the LOCALDEV distribution via Google Play Store
+* Edit app/src/dev/AndroidManifest.xml
+```
+...
+    <application
+        android:name="com.mendix.nativetemplate.DevApplication"
+        tools:replace="android:name"
+        android:usesCleartextTraffic="true">
+...        
+
+```
+
 Install the node modules by running the following
 
 ```
