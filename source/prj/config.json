@@ -8,7 +8,7 @@
     },
     "deviceTarget": {
         "phone": true,
-        "tablet": true
+        "tablet": false
     },
     "orientation": {
         "portrait": true,
@@ -87,6 +87,20 @@
             "required": false
         },
         {
+            "title": "Bluetooth - Always Usage",
+            "name": "NSBluetoothAlwaysUsageDescription",
+            "purpose": "This app may need access to your Bluetooth connection.",
+            "platform": "ios",
+            "required": false
+        },
+        {
+            "title": "Bluetooth - Peripheral Usage",
+            "name": "NSBluetoothPeripheralUsageDescription",
+            "purpose": "This app may need access to your Bluetooth connection.",
+            "platform": "ios",
+            "required": false
+        },
+        {
             "title": "Bluetooth - Connect",
             "name": "android.permission.BLUETOOTH_CONNECT",
             "platform": "android",
@@ -105,17 +119,21 @@
             "required": false
         },
         {
-            "title": "Bluetooth - Always Usage",
-            "name": "NSBluetoothAlwaysUsageDescription",
-            "purpose": "This app may need access to your Bluetooth connection.",
-            "platform": "ios",
+            "title": "Bluetooth - Privileged",
+            "name": "android.permission.BLUETOOTH_PRIVILEGED",
+            "platform": "android",
             "required": false
         },
         {
-            "title": "Bluetooth - Peripheral Usage",
-            "name": "NSBluetoothPeripheralUsageDescription",
-            "purpose": "This app may need access to your Bluetooth connection.",
-            "platform": "ios",
+            "title": "Use Biometric",
+            "name": "android.permission.USE_BIOMETRIC",
+            "platform": "android",
+            "required": false
+        },
+        {
+            "title": "Fingerprint",
+            "name": "android.permission.USE_FINGERPRINT",
+            "platform": "android",
             "required": false
         }
     ],
@@ -161,8 +179,8 @@
             "enabled": false
         }
     },
-    "appVersion": "0.0.11",
-    "buildNumber": 11,
+    "appVersion": "0.2.0",
+    "buildNumber": 12,
     "runtimeUrl": "http://localhost:8080",
     "hermesEnabled": false
 }
