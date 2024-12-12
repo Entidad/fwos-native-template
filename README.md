@@ -75,6 +75,32 @@ dependencies {
 }
 ```
 
+Enable [Hermes](https://reactnative.dev/docs/0.70/hermes#android) JavaScript engine and disable JSC
+```
+...
+project.ext.react = [
+        bundleForVariant: { def variant -> false },
+        enableHermes : true  // clean and rebuild if changing
+]
+...
+    // Javascript engine
+    if (enableHermes) {
+       // def hermesPath = "../../node_modules/hermes-engine/android/";
+       // implementation files(hermesPath + "hermes-debug.aar")
+
+        //noinspection GradleDynamicVersion
+        implementation("com.facebook.react:hermes-engine:+") { // From node_modules
+            exclude group:'com.facebook.fbjni'
+        }
+    } else {
+        implementation jscFlavor
+    }
+...
+    //Removed because we enabled Hermes to run AFJ
+    //implementation "org.webkit:android-jsc:r245459"
+...
+```
+
 For smaller APK sizes, limit the buildTypes by editing `android/app/build.gradle` and add abiFilters as follows [reference](https://developer.android.com/ndk/guides/abis)
 
 ```
@@ -93,6 +119,19 @@ For smaller APK sizes, limit the buildTypes by editing `android/app/build.gradle
         }
     }
 ...
+```
+
+Edit file `./android/app/src/main/AndroidManifest.xml`
+* Add query intent for [NativeFileDocuments](https://marketplace.mendix.com/link/component/114252) module
+```
+    <queries>
+    ...
+      <intent>
+          <action android:name="android.intent.action.VIEW" />
+          <data android:mimeType="*/*" />
+      </intent>
+    ...
+    </queries>
 ```
 
 For the Android *.developerApp with Native Template 7.0.15, you will need to apply changes #1 and #2 to MainApplication.java due to an issue with API 34
@@ -122,6 +161,22 @@ Ensure the following sources are listed in `ios/Podfile`
 
 ```
 source 'https://cdn.cocoapods.org'
+```
+
+Enable [Hermes](https://reactnative.dev/docs/0.70/hermes#ios) JavaScript engine to disable JSC
+```
+def common_pods
+  # Comment the next line if you don't want to use dynamic frameworks
+  # use_frameworks!
+
+  # RN development pods
+  config = use_native_modules!
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # Hermes is disabled by default to avoid incompatibilities and slowness with Mendix Runtime.
+    :hermes_enabled => true,
+    :fabric_enabled => false,
+...
 ```
 
 Install the pods as follows
