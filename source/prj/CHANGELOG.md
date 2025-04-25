@@ -6,6 +6,27 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 
 ## [Unreleased]
 
+- We have upgraded Node.js version to v20.
+- [Android] We have replaced the MaxPermSize JVM parameter with MaxMetaspaceSize, as MaxPermSize is no longer available since Java 8.
+
+# [7.0.24] - 2025-01-15
+
+- We have resolved an issue where remote JavaScript debugging failed in a custom-built Mendix Native Developer App, leading to crashes when enabling “Remote JS Debugging.” The problem was caused by Firebase services not being initialized properly during the build process. We have ensured that Firebase dependencies are now only included when explicitly required by the application.
+
+# [7.0.23] - 2025-01-07
+
+- We have updated the AppCenter's Xcode version to 15.4.
+
+# [7.0.22] - 2025-01-03
+
+- We have updated the implementation of the registerReceiver method to align with Android SDK 34 and above.
+
+# [7.0.20] - 2024-12-23
+
+- We have updated min sdk to 23 on android.
+
+# [7.0.19] - 2024-10-01
+
 - We have updated `react-native-permissions` to version `3.6.1`.
 
 # [7.0.17] - 2024-09-03

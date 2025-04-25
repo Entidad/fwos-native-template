@@ -3,6 +3,11 @@ package com.mendix.nativetemplate;
 import android.app.Activity;
 
 import androidx.annotation.NonNull;
+import android.content.Context;
+import android.content.Intent;
+import android.content.BroadcastReceiver;
+import android.content.IntentFilter;
+import android.os.Build;
 
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactPackage;
@@ -16,17 +21,9 @@ import org.devio.rn.splashscreen.SplashScreenReactPackage;
 
 import java.util.List;
 
-import android.content.Context; // make sure you are not importing multiple times
-import android.content.BroadcastReceiver;
-import android.content.Intent;
-import android.content.IntentFilter;
-import android.os.Build;
-import org.jetbrains.annotations.Nullable;
-
 public class MainApplication extends MendixReactApplication {
-
     @Override
-    public Intent registerReceiver(@Nullable BroadcastReceiver receiver, IntentFilter filter) {
+    public Intent registerReceiver(BroadcastReceiver receiver, IntentFilter filter) {
         if (Build.VERSION.SDK_INT >= 34 && getApplicationInfo().targetSdkVersion >= 34) {
             return super.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED);
         } else {
