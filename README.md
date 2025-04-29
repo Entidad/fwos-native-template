@@ -6,8 +6,8 @@ This native template is located in directory `source` in this source tree.
 
 Tools used:
 
-* npm: 8.19.2
-* node: v16.18.0
+* npm: v10.8.2
+* node: v20.18.3
 * java: openjdk 11.0.11 2021-04-20
 * javac: javac 11.0.11
 
@@ -132,11 +132,6 @@ Edit file `./android/app/src/main/AndroidManifest.xml`
       </intent>
     ...
     </queries>
-```
-
-For the Android *.developerApp with Native Template 7.0.15, you will need to apply changes #1 and #2 to MainApplication.java due to an issue with API 34
-```
-https://medium.com/@anaz_19473/react-native-app-crashes-on-upgrading-to-targetsdkversion-34-android-14-f8f575da6b45
 ```
 
 Enable http (unencrypted) traffic for developerApp distribution. This step is required if you are deploying the LOCALDEV distribution via Google Play Store
